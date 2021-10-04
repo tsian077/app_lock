@@ -20,6 +20,51 @@
       android:id="@+id/toolbar"
        android:background="@color/BLUE"
        style="@style/AppTheme.AppBarOverlay"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@color/white"
+      android:id="@+id/layout_permission">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_sentiment_dissatisfied_24"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:orientation="vertical"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="set permission"
+            android:textColor="#000000"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Give access"/>
+      </LinearLayout>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_gravity="right"
+         android:background="@drawable/click_button"
+         android:text="Ebable"
+         android:textColor="@color/GREEN"
+          android:drawableRight="@drawable/ic_baseline_touch_app_24"
+          android:onClick="set_permission"/>
+   </LinearLayout>
    <androidx.recyclerview.widget.RecyclerView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"

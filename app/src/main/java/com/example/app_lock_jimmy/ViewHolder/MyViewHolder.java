@@ -25,16 +25,15 @@ public class MyViewHolder extends RecyclerView.ViewHolder{
         app_icon= itemView.findViewById(R.id.App_icon);
         lock_app = itemView.findViewById(R.id.Lock_app);
 
-//        itemView.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//
-//                app_icon.setBackgroundColor(-500136);
-////                MyAdapter.Lockapp(MyAdapter)
-//            }
-//
-//
-//
-//        });
+        itemView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+
+            }
+
+
+
+        });
     }
 }
